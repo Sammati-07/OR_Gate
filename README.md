@@ -27,6 +27,7 @@ Logic gate is an electronic device that implements a Boolean Expression. These g
 OR Gate is a digital logic gate that has output at logic level ‘1’ when both or any one of the input is high and is at logic level ‘0’ when both inputs are low. The OR gate is built up from basic NOR gate and an inverter at output of NOR gate. According to this, first we design CMOS NOR gate circuit, output of which is sent to Inverter to get OR gate operation.
 
 Step 1: Construct NOR Gate
+
 A CMOS NOR Gate circuit uses 4 transistors. In Figure (a), M2 and M3 are PMOS transistor which are connected in series whereas M1 and M4 are NMOS transistor which are connected in parallel. Both M1 and M2 are connected to same input signal (InputA), the upper transistor turns off and the lower transistor turns on when input is high (1) and vice versa. Similarly, M3 and M4 controlled by another input signal (InputB) and they also exhibit ON/OFF behaviour in same pattern. The output will go low (0) only when both lower transistors saturate.
 
 ![](https://github.com/Sammati-07/OR_Gate/blob/main/NOR_Schematic.png)
@@ -34,6 +35,7 @@ A CMOS NOR Gate circuit uses 4 transistors. In Figure (a), M2 and M3 are PMOS tr
 Figure(a)
 
 Step 2: Construct Inverter
+
 The output of NOR Gate is fed to a simple inverter circuit which contains two transistors (One N type and another P type) which performs simple inversion operation. In Figure (b) M1 is P type and M2 is N type transistor. Final Output is fetched at the output of Inverter.
 
 ![](https://github.com/Sammati-07/OR_Gate/blob/main/Inverter_schematic.png)
@@ -41,6 +43,7 @@ The output of NOR Gate is fed to a simple inverter circuit which contains two tr
 Figure(b)
 
 Step 3: Construct OR Gate
+
 CMOS OR Gate Circuit uses 6 transistor, 3 of which are PMOS transistors and other 3 are NMOS transistors. The Figure (c) shows schematic representation of OR Gate. Figure (d) shows the waveform of OR Gate. 
 
 
