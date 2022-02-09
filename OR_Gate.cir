@@ -1,0 +1,26 @@
+* C:\Users\C0MPUTER\eSim-Workspace\OR_Gate\OR_Gate.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 02/07/22 22:40:20
+
+.lib "sky130_fd_pr/latest/models/sky130.lib.spice" tt
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+xM3  Net-_M1-Pad1_ InB Net-_M2-Pad1_ Net-_M2-Pad3_ sky130_fd_pr__pfet_01v8 W=2.5 L=0.5 M=1		
+xM2  Net-_M2-Pad1_ InA Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__pfet_01v8 W=2.5 L=0.5 M=1		
+xM6  out Net-_M1-Pad1_ Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__pfet_01v8 W=2.5 L=0.5 M=1	
+xM1  Net-_M1-Pad1_ InA GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.5 M=1		
+xM4  Net-_M1-Pad1_ InB GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.5 M=1			
+xM5  out Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.5 M=1		
+v3  Net-_M2-Pad3_ GND DC 1.8V		
+v1  InA GND pulse(0 1.8 0us 0us 0us 5us 10us)			
+v2  InB GND pulse(0 1.8 0us 0us 0us 10us 20us)				
+
+.tran 0.1us 20us
+.control
+run
+plot V(InA) V(InB)+6 V(out)+12
+.endc
+.end
