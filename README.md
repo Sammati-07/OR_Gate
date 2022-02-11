@@ -12,7 +12,8 @@
 4. [Results](#results)
    - [Obtained Output Waveforms](#obtained-output-waveforms) 
 6. [References](#references)
-7. [Author](#author)
+7. [Acknowledgement](#Acknowledgement)
+8. [Author](#author)
 
 
 ## Abstract 
@@ -93,6 +94,10 @@ Figure(d)
 2.  CMOS Circuit design, Layout and Simulation 3rd edition By R. JACOB BAKER
 3.	```https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/```
 
+## Acknowledgement
+- Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
+- SFAL Team
+- 
 ## Author
 
 - [G R Sammati](), Bachelor of Engineering in Electronics and Communication Engineering, KLE Technological University, Hubballi.
