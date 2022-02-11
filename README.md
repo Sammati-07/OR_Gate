@@ -97,7 +97,6 @@ Figure(d)
 ## Acknowledgement
 - Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
 - SFAL Team
-- 
 ## Author
 
 - [G R Sammati](), Bachelor of Engineering in Electronics and Communication Engineering, KLE Technological University, Hubballi.
